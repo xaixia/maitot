@@ -1,0 +1,116 @@
+html, body {
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+}
+
+body, div, address, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, pre, table, caption, td, form, legend, fieldset, input, button, select, textarea, p {
+    margin: 0;
+    padding: 0;
+}
+
+.badge-warning {
+    color: #ffffff;
+    background-color: #ff6633 !important;;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ol, ul, dl, li, dt {
+    list-style-type: none;
+}
+
+.p-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.p-container {
+    min-height: 600px;
+}
+
+.bg-primary {
+    background-color: #03213E !important;
+}
+
+.bg-orange {
+    background-color: #ff6633 !important;;
+}
+
+.bg-white {
+    background-color: #ffffff !important;;
+}
+
+.bg-gray {
+    background-color: #f7f7f7 !important;;
+}
+
+.border-gray {
+    border: 1px solid #ccc;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.fz20 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fz18 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.fz16 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.fz13 {
+    font-size: 13px;
+}
+
+.fc-black {
+    color: #333333 !important;
+}
+
+.fc-gray {
+    color: #999999 !important;
+}
+
+.fc-dark {
+    color: #000000 !important;
+}
+
+.fc-white {
+    color: #dddddd !important;
+}
+
+.fc-light {
+    color: #FFFFFF !important;
+}
+
+.fc-orange {
+    color: #ff6633 !important;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-regular {
+    font-weight: 100;
+}
+
+.p-page-title {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    padding: 30px 0px 20px 15px;
+}
+
