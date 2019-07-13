@@ -30,6 +30,7 @@ ol, ul, dl, li, dt {
 
 .p-container {
     min-height: 600px;
+    position: relative;
 }
 
 .bg-primary {
@@ -112,5 +113,174 @@ ol, ul, dl, li, dt {
     font-style: normal;
     font-size: 18px;
     padding: 30px 0px 20px 15px;
+}
+
+/*轮播样式*/
+.carousel-indicators li, .carousel-indicators .active {
+    width: 25px;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 0;
+}
+
+.carousel-indicators .active {
+    background: #fff;
+}
+
+/*搜索框样式*/
+.p-search {
+    padding: 40px 0;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.p-search .p-types {
+    font-size: 14px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.p-search .p-types b {
+    display: inline-block;
+    height: 2px;
+    width: 23px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    background: #333;
+}
+
+.p-search .p-types select {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 60px;
+}
+
+.p-search .p-types label {
+    padding-left: 30px;
+    width: 100px;
+}
+
+.p-search .p-types:after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: relative;
+    left: -60px;
+    top: -2px;
+    margin-left: 10px;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    transform: rotate(-45deg);
+}
+
+.p-search .search-wrap {
+    padding-left: 50px;
+    display: inline-flex;
+    align-items: center;
+    width: 70%;
+}
+
+.p-search .search-wrap input {
+    width: 100%;
+    height: 37px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(16, 91, 164, 1);
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #999999;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+.p-search .search-wrap label {
+    border-width: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 54px;
+    height: 37px;
+    margin: 0;
+    background: inherit;
+    background-color: rgba(16, 91, 164, 1);
+    border: none;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Arial Negreta', 'Arial Normal', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.p-search .new-user {
+    display: inline-flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.p-search .new-user img {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.p-search .new-user .new-user-tip {
+    padding-left: 45px;
+    position: relative;
+}
+
+/*右侧快捷菜单*/
+.common-right-aside {
+    position: fixed;
+    height: 282px;
+    width: 160px;
+    z-index: 999;
+    top: calc(50% - 141px);
+    right:calc(50% - 600px - 160px);
+}
+.common-right-aside  ul li{
+    height:55px;
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+}
+.common-right-aside  ul li p{
+    width: 110px;
+    padding-right: 30px;
+    text-align: right;
+}
+.common-right-aside  ul li div{
+    width: 52px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    justify-content: space-around;
+    background: #666666;
+}
+.common-right-aside  ul li div img{
+    width: 31px;
+    height: 31px;
 }
 

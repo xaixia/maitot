@@ -1,0 +1,220 @@
+.search-top {
+    display: inline-flex;
+    width: 100%;
+}
+
+.search-bottom {
+    display: none;
+    width: 1200px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 600px);
+    margin: 0 0 40px 0;
+    align-items: center;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 0;
+    -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.349019607843137);
+    -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.349019607843137);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.349019607843137);
+}
+
+.search-bottom .search-bottom-logo {
+    width: 82px;
+    height: 29px;
+    margin: 0 50px 0 10px;
+}
+
+.search-bottom .search-bottom-search {
+    width: 85%;
+}
+
+.search-goods .search-goods-top {
+    display: inline-flex;
+    align-items: center;
+    width: 1200px;
+    height: 35px;
+    justify-content: space-between;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+.search-goods .search-goods-top .search-items {
+    display: inline-flex;
+    align-items: center;
+    width: 550px;
+    justify-content: start;
+}
+.search-goods .search-goods-top .search-item {
+    display: inline-flex;
+    align-items: center;
+    min-width: 65px;
+    justify-content: space-around;
+}
+.search-goods .search-goods-top .search-items input {
+    display: inline-flex;
+    height: 25px;
+    width: 65px;
+}
+.search-goods .search-goods-top .search-items span {
+    display: inline-flex;
+    width: 15px;
+    margin: 0 5px;
+    color: #ccc;
+    justify-content: space-around;
+}
+.search-goods .search-goods-top .search-price-range .search-confirm {
+    width: 64px;
+    height: 22px;
+    color: #fff;
+    line-height: 11px;
+    font-size: 13px;
+    background: #169BD5;
+    margin-top: -2px;
+    display: none;
+}
+.search-goods .search-goods-top .search-price-range:hover .search-confirm{
+    display: inline-block;
+}
+
+.search-goods h3 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.search-goods h3:before {
+    content: ' ';
+    display: inline-flex;
+    width: 10px;
+    height: 27px;
+    margin-right: 10px;
+    background: red;
+}
+
+.search-goods-content {
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 20px 0 40px 0;
+    display: inline-flex;
+}
+
+.search-goods-content .search-goods-left img {
+    display: inline-block;
+    width: 1200px;
+}
+
+.search-goods-content ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-goods-content ul li {
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    align-items: center;
+    border-color: rgba(204, 204, 204, 1);
+    width: 19%;
+    height: 288px;
+}
+
+.search-goods-content ul li .search-good {
+    display: inline-block;
+    width: 100%;
+    margin: 3px;
+}
+
+.search-goods-content ul li {
+    margin-bottom: 14px;
+}
+
+.search-goods-content ul li .search-good p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 0 14px;
+    color: #333;
+}
+
+.search-goods-content ul li .search-good b {
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: normal;
+    color: #FF6600;
+}
+
+.search-goods-content ul li img {
+    width: calc(100% - 6px);
+}
+
+.search-pager {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 40px 275px;
+    width: 650px;
+    justify-content: space-around;
+}
+
+.search-pager .btn {
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0;
+    color: #333;
+    justify-content: center;
+    background: #fff;
+}
+
+.search-pager .pageto {
+    height: 35px;
+    width: 90px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F2F2F2;
+    background: #fff;
+    margin: 0 10px;
+}
+
+.search-pager .search-pagers {
+    border-top: 1px solid #F2F2F2;
+    border-left: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    font-size: 0;
+}
+
+.search-pager .page {
+    height: 35px;
+    width: 35px;
+    display: inline-flex;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border-right: 1px solid #F2F2F2;
+}
+
+.search-pager button.active {
+    background: #FF6600;
+    color: #fff;
+}
+
+.search-pager .confirm {
+    display: inline-flex;
+    width: 55px;
+    height: 27px;
+    margin-left: 15px;
+    font-size: 13px;
+    border: 1px solid #F2F2F2;
+    align-items: center;
+}
+
+.search-pager .page-number {
+    display: inline-flex;
+    width: 55px;
+    height: 25px;
+}
