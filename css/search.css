@@ -37,26 +37,36 @@
     width: 1200px;
     height: 35px;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 10px 0 0;
     border: 1px solid #ccc;
 }
+
 .search-goods .search-goods-top .search-items {
     display: inline-flex;
     align-items: center;
     width: 550px;
     justify-content: start;
 }
+
 .search-goods .search-goods-top .search-item {
     display: inline-flex;
     align-items: center;
-    min-width: 65px;
+    padding: 0 20px;
+    height: 33px;
+    cursor: pointer;
     justify-content: space-around;
 }
+.search-goods .search-goods-top .active {
+    background: #F2F2F2;
+    color: #FF6633;
+}
+
 .search-goods .search-goods-top .search-items input {
     display: inline-flex;
     height: 25px;
     width: 65px;
 }
+
 .search-goods .search-goods-top .search-items span {
     display: inline-flex;
     width: 15px;
@@ -64,6 +74,7 @@
     color: #ccc;
     justify-content: space-around;
 }
+
 .search-goods .search-goods-top .search-price-range .search-confirm {
     width: 64px;
     height: 22px;
@@ -74,7 +85,8 @@
     margin-top: -2px;
     display: none;
 }
-.search-goods .search-goods-top .search-price-range:hover .search-confirm{
+
+.search-goods .search-goods-top .search-price-range:hover .search-confirm {
     display: inline-block;
 }
 
@@ -122,6 +134,7 @@
     margin: 0 0 0 1.25%;
     height: 288px;
 }
+
 .search-goods-content ul li:nth-child(1) {
     margin: 0;
 }
@@ -138,10 +151,10 @@
 
 .search-goods-content ul li .search-good p {
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+   line-height: 13px;
+    max-height: 26px;
     font-size: 13px;
-    padding: 0 14px;
+    padding: 0 5px;
     color: #333;
 }
 
@@ -149,6 +162,7 @@
     font-size: 16px;
     display: inline-block;
     margin-top: 10px;
+    padding: 0 5px;
     font-weight: normal;
     color: #FF6600;
 }
@@ -173,6 +187,11 @@
     color: #333;
     justify-content: center;
     background: #fff;
+}
+
+.search-pager .btn:hover {
+    color: #fff;
+    background: #FF6633;
 }
 
 .search-pager .pageto {

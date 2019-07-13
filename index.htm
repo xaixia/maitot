@@ -273,7 +273,7 @@
         <div class="index-goods">
             <div class="index-goods-top">
                 <h3>潮流女装</h3>
-                <p>查看更多>></p>
+                <a>查看更多>></a>
             </div>
             <div class="index-goods-content">
                 <a class="index-goods-left">
@@ -529,37 +529,39 @@
                 </li>
             </ul>
         </div>
-        <div class="index-bottom">
-            <div class="index-bottom-logo">
-                <img src="img/index/u1126.png" alt="">
-            </div>
-            <div class="index-bottom-search">
-                <div class="p-search">
-                    <div class="p-types fc-black">
-                        <p style="position: relative;top:-10px;">
-                            <b style="top:0"></b>
-                            <b style="top:6px"></b>
-                            <b style="top:12px"></b>
-                        </p>
-                        <label for="select2">所有类目</label>
-                        <select id="select2" name="select">
-                            <option></option>
-                            <option>类目1</option>
-                            <option>类目2</option>
-                            <option>类目3</option>
-                            <option>类目4</option>
-                            <option>类目5</option>
-                        </select>
-                    </div>
-                    <div class="search-wrap">
-                        <input type="text" placeholder="香奈儿双头唇釉" name="search" id="search1">
-                        <label for="search1"><span class="glyphicon glyphicon-search"></span></label>
-                    </div>
-                    <div class="new-user">
-                        <div class="new-user-tip">
-                            <img src="img/index/u247.png" alt="">
-                            <p>新用户？</p>
-                            <p>查看Maitot<a href="">新手教程</a></p>
+        <div class="common-fixed-search">
+            <div class="common-fixed-search-wrap">
+                <div class="common-fixed-search-logo">
+                    <img src="img/index/u1126.png" alt="">
+                </div>
+                <div class="common-fixed-search-content">
+                    <div class="p-search">
+                        <div class="p-types fc-black">
+                            <p style="position: relative;top:-10px;">
+                                <b style="top:0"></b>
+                                <b style="top:6px"></b>
+                                <b style="top:12px"></b>
+                            </p>
+                            <label for="select2">所有类目</label>
+                            <select id="select2" name="select">
+                                <option></option>
+                                <option>类目1</option>
+                                <option>类目2</option>
+                                <option>类目3</option>
+                                <option>类目4</option>
+                                <option>类目5</option>
+                            </select>
+                        </div>
+                        <div class="search-wrap">
+                            <input type="text" placeholder="香奈儿双头唇釉" name="search" id="search1">
+                            <label for="search1"><span class="glyphicon glyphicon-search"></span></label>
+                        </div>
+                        <div class="new-user">
+                            <div class="new-user-tip">
+                                <img src="img/index/u247.png" alt="">
+                                <p>新用户？</p>
+                                <p>查看Maitot<a href="">新手教程</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -671,9 +673,9 @@
         $(document).scroll(function () {
             var scroH = $(document).scrollTop();  //滚动高度
             if (scroH > 175) {  //距离顶部大于100px时
-                $('.index-bottom').css('display','inline-flex')
+                $('.common-fixed-search').css('display','inline-flex')
             }else{
-                $('.index-bottom').css('display','none')
+                $('.common-fixed-search').css('display','none')
             }
         });
     })

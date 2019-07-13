@@ -129,6 +129,41 @@ ol, ul, dl, li, dt {
 }
 
 /*搜索框样式*/
+.common-fixed-search {
+    width: 100vw;
+    display: none;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 0 40px 0;
+    align-items: center;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 0;
+    -moz-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.349019607843137);
+    -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.349019607843137);
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.349019607843137);
+}
+
+.common-fixed-search .common-fixed-search-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.common-fixed-search .common-fixed-search-logo {
+    width: 82px;
+    height: 29px;
+    margin: 0 50px 0 10px;
+}
+
+.common-fixed-search .common-fixed-search-content {
+    width: 85%;
+}
+
 .p-search {
     padding: 40px 0;
     width: 100%;
@@ -255,31 +290,58 @@ ol, ul, dl, li, dt {
     position: fixed;
     height: 282px;
     width: 160px;
+    overflow: hidden;
     z-index: 999;
     top: calc(50% - 141px);
-    right:calc(50% - 600px - 160px);
+    right: calc(50% - 600px - 160px);
 }
-.common-right-aside  ul li{
-    height:55px;
+
+.common-right-aside ul li {
+    height: 55px;
     display: inline-flex;
     align-items: center;
     background: #fff;
 }
-.common-right-aside  ul li p{
+
+.common-right-aside ul li p {
     width: 110px;
     padding-right: 30px;
+    position: relative;
+    left: 110px;
+    color: #fff;
+    background: #FF6633;
+    line-height: 55px;
+    opacity: 0;
+    border-bottom: 1px solid #fff;
+    height: 55px;
     text-align: right;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
 }
-.common-right-aside  ul li div{
+
+.common-right-aside ul li div {
     width: 52px;
     height: 55px;
     display: inline-flex;
     align-items: center;
+    position: relative;
+    z-index: 999;
     border-bottom: 1px solid #fff;
     justify-content: space-around;
     background: #666666;
 }
-.common-right-aside  ul li div img{
+
+.common-right-aside ul li:hover div {
+    background: #FF6633;
+}
+
+.common-right-aside ul li:hover p {
+    opacity: 1;
+    left: 0;
+}
+
+.common-right-aside ul li div img {
     width: 31px;
     height: 31px;
 }
