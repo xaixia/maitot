@@ -97,6 +97,7 @@
     width: 1200px;
     margin: 20px 0 40px 0;
     display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .search-goods-content .search-goods-left img {
@@ -107,7 +108,8 @@
 .search-goods-content ul {
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    width: 1200px;
+    justify-content: start;
 }
 
 .search-goods-content ul li {
@@ -117,7 +119,11 @@
     align-items: center;
     border-color: rgba(204, 204, 204, 1);
     width: 19%;
+    margin: 0 0 0 1.25%;
     height: 288px;
+}
+.search-goods-content ul li:nth-child(1) {
+    margin: 0;
 }
 
 .search-goods-content ul li .search-good {
