@@ -1,0 +1,19 @@
+.detail-content {
+    padding:0 0 20px;
+    position: relative;
+}
+
+.detail-content .detail-content-breadcrumbs {
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.detail-content .detail-content-breadcrumbs span:after {
+    content: '>';
+    display: inline-block;
+    margin: 0 8px;
+}
+.detail-content .detail-content-breadcrumbs span:last-child:after {
+    content: '';
+}
